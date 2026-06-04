@@ -1,4 +1,4 @@
-# My_CV_Website
+# My CV Website
 
 View live website : [Click Here](https://dataquantapm.github.io/My_CV_Website/)
 
