@@ -1,0 +1,251 @@
+/* ===============================
+   Custom CSS - Website CV UTS
+   =============================== */
+
+:root {
+  --bg-dark: #09111f;
+  --bg-soft: #f5f7fb;
+  --card: #ffffff;
+  --primary: #4f7cff;
+  --secondary: #7c3aed;
+  --text-dark: #172033;
+  --text-muted: #6b7280;
+  --border: #e5e7eb;
+  --shadow: 0 20px 45px rgba(15, 23, 42, 0.12);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--text-dark);
+  background-color: #ffffff;
+  line-height: 1.7;
+}
+
+.glass-navbar {
+  background: rgba(9, 17, 31, 0.86);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+.hero-section {
+  background:
+    radial-gradient(circle at top left, rgba(79, 124, 255, 0.35), transparent 32%),
+    radial-gradient(circle at bottom right, rgba(124, 58, 237, 0.3), transparent 34%),
+    linear-gradient(135deg, #09111f 0%, #111827 55%, #1e1b4b 100%);
+  color: white;
+}
+
+.badge-label,
+.section-kicker {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--primary);
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, #8fb3ff, #c4b5fd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-description {
+  max-width: 650px;
+  font-size: 1.08rem;
+  color: rgba(255, 255, 255, 0.82);
+}
+
+mark {
+  padding: 0.15rem 0.35rem;
+  border-radius: 8px;
+  background: rgba(255, 229, 100, 0.9);
+}
+
+.profile-card {
+  max-width: 360px;
+  padding: 2rem;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.95);
+  color: var(--text-dark);
+  box-shadow: var(--shadow);
+  transform: rotate(1deg);
+}
+
+.profile-img {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 8px solid #eef2ff;
+}
+
+.section-padding {
+  padding: 90px 0;
+}
+
+.bg-soft {
+  background: var(--bg-soft);
+}
+
+.section-heading h2 {
+  font-weight: 800;
+  letter-spacing: -0.04em;
+}
+
+.content-card,
+.project-card,
+.gallery-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 14px 35px rgba(15, 23, 42, 0.06);
+}
+
+.content-card p:last-child {
+  margin-bottom: 0;
+}
+
+.custom-list {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.custom-list li {
+  margin-bottom: 0.75rem;
+}
+
+.numbered-list li::marker {
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.skill-tags span {
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  background: #eef2ff;
+  color: #3445a4;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.table {
+  margin-bottom: 0;
+}
+
+.table thead th {
+  background: #eef2ff;
+  color: #27346b;
+  border-bottom: none;
+}
+
+.project-card,
+.gallery-card {
+  height: 100%;
+  transition: all 0.25s ease;
+}
+
+.project-card:hover,
+.gallery-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow);
+}
+
+.project-card img,
+.gallery-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+  border-radius: 18px;
+  background: #f8fafc;
+}
+
+.gallery-card p {
+  margin-top: 1rem;
+  margin-bottom: 0;
+  font-weight: 600;
+  color: var(--text-muted);
+}
+
+.contact-card {
+  max-width: 850px;
+  margin: 0 auto;
+  background:
+    linear-gradient(#ffffff, #ffffff) padding-box,
+    linear-gradient(135deg, var(--primary), var(--secondary)) border-box;
+  border: 2px solid transparent;
+}
+
+.contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-links a {
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+  font-weight: 700;
+  transition: transform 0.2s ease;
+}
+
+.contact-links a:hover {
+  transform: translateY(-3px);
+}
+
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  width: 46px;
+  height: 46px;
+  border: none;
+  border-radius: 50%;
+  background: var(--primary);
+  color: white;
+  font-size: 1.3rem;
+  font-weight: bold;
+  display: none;
+  box-shadow: var(--shadow);
+  z-index: 999;
+}
+
+.footer {
+  background: var(--bg-dark);
+  color: rgba(255, 255, 255, 0.75);
+}
+
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 2.4rem;
+  }
+
+  .section-padding {
+    padding: 70px 0;
+  }
+
+  .profile-img {
+    width: 190px;
+    height: 190px;
+  }
+}
