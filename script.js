@@ -1,7 +1,3 @@
-// ===============================
-// Custom JavaScript - Website CV
-// ===============================
-
 const backToTopButton = document.getElementById("backToTop");
 
 window.addEventListener("scroll", function () {
@@ -19,4 +15,4 @@ backToTopButton.addEventListener("click", function () {
   });
 });
 
-console.log("Website CV Zona 74 berhasil dimuat.");
+console.log("Website CV Quanta Paramatha berhasil dimuat.");
